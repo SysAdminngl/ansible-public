@@ -4,22 +4,22 @@
   tasks:
   - name: Copy BDF to server1
     copy:
-      src: /var/packages/lnx-bdf/installer.xml
+      src: \\192.168.7.239\share\lnx-bdf\installer.xml
       dest: /root
       mode: 0722
   - name: Copy BDF to server2
     copy:
-      src: /var/packages/lnx-bdf/installer
+      src: \\192.168.7.239\share\lnx-bdf\installer
       dest: /root
       mode: 0722
   - name: Copy BDF to server3
     copy:
-      src: /var/packages/lnx-bdf/bdconfigure
+      src: \\192.168.7.239\share\lnx-bdf\bdconfigure
       dest: /root
       mode: 0722
   - name: Copy BDF to server4
     copy:
-      src: /var/packages/lnx-bdf/linux-amd64
+      src: \\192.168.7.239\share\lnx-bdf\linux-amd64
       dest: /root
       mode: 0722
   - name: run BDF installer
