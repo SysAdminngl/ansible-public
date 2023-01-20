@@ -4,8 +4,9 @@
   tasks:
   - name: Copy BDF to server1
     copy:
-      src: /var/packages/lnx-bdf/installer.xml
+      src: \\192.168.7.239\share\lnx-bdf\installer.xml
       dest: /root
+      remote_src: True
       mode: 0722
   - name: Copy BDF to server2
     copy:
